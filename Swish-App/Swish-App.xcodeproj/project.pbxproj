@@ -12,6 +12,7 @@
 		599A2B6E1F60876F0029AD48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599A2B6C1F60876F0029AD48 /* Main.storyboard */; };
 		599A2B701F60876F0029AD48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 599A2B6F1F60876F0029AD48 /* Assets.xcassets */; };
 		599A2B731F60876F0029AD48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599A2B711F60876F0029AD48 /* LaunchScreen.storyboard */; };
+		599A2B7E1F60947F0029AD48 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599A2B7D1F60947F0029AD48 /* BorderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		599A2B6F1F60876F0029AD48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		599A2B721F60876F0029AD48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		599A2B741F60876F0029AD48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		599A2B7D1F60947F0029AD48 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		599A2B671F60876F0029AD48 /* Swish-App */ = {
 			isa = PBXGroup;
 			children = (
+				599A2B7C1F6094550029AD48 /* Views */,
 				599A2B7B1F6087940029AD48 /* ViewControllers */,
 				599A2B7A1F60878A0029AD48 /* Resources */,
 			);
@@ -78,6 +81,14 @@
 				599A2B6C1F60876F0029AD48 /* Main.storyboard */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		599A2B7C1F6094550029AD48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				599A2B7D1F60947F0029AD48 /* BorderButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 			files = (
 				599A2B6B1F60876F0029AD48 /* ViewController.swift in Sources */,
 				599A2B691F60876F0029AD48 /* AppDelegate.swift in Sources */,
+				599A2B7E1F60947F0029AD48 /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GL34LYNV2E;
-				INFOPLIST_FILE = "Swish-App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Swish-App/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JoseMelendez.Swish-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,7 +319,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GL34LYNV2E;
-				INFOPLIST_FILE = "Swish-App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Swish-App/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JoseMelendez.Swish-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";

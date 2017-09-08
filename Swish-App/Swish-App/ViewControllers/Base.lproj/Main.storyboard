@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -57,6 +58,9 @@
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="WqV-6d-G1A" kind="show" id="TUV-aA-BqB"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in your city &amp; dominate the league" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiM-0g-MI1">
                                 <rect key="frame" x="20" y="285" width="374" height="57.666666666666686"/>
@@ -105,7 +109,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="3Iw-u0-ogr">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bnq-CM-sWI">
                                 <rect key="frame" x="0.66666666666665719" y="40" width="413.33333333333337" height="68"/>
@@ -177,13 +181,26 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJb-gy-UQw">
+                                <rect key="frame" x="0.0" y="30" width="83" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Zdk-1K-f2d"/>
+                                    <constraint firstAttribute="width" constant="83" id="i97-q8-h2j"/>
+                                </constraints>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="NtQ-9V-EQq" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="5Zs-E6-BoK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="GJb-gy-UQw" firstAttribute="leading" secondItem="XpO-pY-WqY" secondAttribute="leading" id="1nI-qK-aeq"/>
                             <constraint firstItem="KCX-rS-VfO" firstAttribute="leading" secondItem="XpO-pY-WqY" secondAttribute="leading" id="5UJ-8c-oZE"/>
-                            <constraint firstItem="3Iw-u0-ogr" firstAttribute="top" secondItem="XpO-pY-WqY" secondAttribute="top" id="8Xh-ag-L3N"/>
+                            <constraint firstItem="3Iw-u0-ogr" firstAttribute="top" secondItem="XpO-pY-WqY" secondAttribute="top" constant="-20" id="8Xh-ag-L3N"/>
                             <constraint firstItem="Bnq-CM-sWI" firstAttribute="leading" secondItem="XpO-pY-WqY" secondAttribute="leading" id="BMb-SV-3tp"/>
                             <constraint firstItem="KCX-rS-VfO" firstAttribute="trailing" secondItem="XpO-pY-WqY" secondAttribute="trailing" id="Ltr-D3-Ox4"/>
+                            <constraint firstItem="GJb-gy-UQw" firstAttribute="top" secondItem="1R9-Cd-cmc" secondAttribute="topMargin" constant="10" id="MUV-md-g6y"/>
                             <constraint firstItem="XpO-pY-WqY" firstAttribute="bottom" secondItem="KCX-rS-VfO" secondAttribute="bottom" constant="20" id="PcM-th-dhE"/>
                             <constraint firstItem="UE5-ds-qoq" firstAttribute="leading" secondItem="XpO-pY-WqY" secondAttribute="leading" id="QBV-a9-HQh"/>
                             <constraint firstItem="XpO-pY-WqY" firstAttribute="trailing" secondItem="Bnq-CM-sWI" secondAttribute="trailing" id="QMl-hc-g1Y"/>
@@ -191,6 +208,7 @@
                             <constraint firstItem="Bnq-CM-sWI" firstAttribute="top" secondItem="XpO-pY-WqY" secondAttribute="top" constant="20" id="aJU-dj-XDh"/>
                             <constraint firstItem="XpO-pY-WqY" firstAttribute="bottom" secondItem="3Iw-u0-ogr" secondAttribute="bottom" id="afn-KU-eDI"/>
                             <constraint firstItem="XpO-pY-WqY" firstAttribute="trailing" secondItem="3Iw-u0-ogr" secondAttribute="trailing" id="ckt-JE-4dI"/>
+                            <constraint firstItem="3Iw-u0-ogr" firstAttribute="top" secondItem="XpO-pY-WqY" secondAttribute="top" constant="-20" id="dZt-Zy-9rl"/>
                             <constraint firstItem="3Iw-u0-ogr" firstAttribute="leading" secondItem="XpO-pY-WqY" secondAttribute="leading" id="sUV-Z8-zVU"/>
                             <constraint firstItem="XpO-pY-WqY" firstAttribute="trailing" secondItem="UE5-ds-qoq" secondAttribute="trailing" id="tlP-J9-aT8"/>
                         </constraints>
@@ -198,6 +216,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UTz-13-ym5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="NtQ-9V-EQq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="808.69565217391312" y="134.5108695652174"/>
         </scene>
@@ -210,7 +229,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="0xm-Qb-fu7">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="e4O-Jt-Jah">
                                 <rect key="frame" x="0.0" y="40" width="414" height="68"/>
@@ -279,7 +298,7 @@
                             <constraint firstItem="e4O-Jt-Jah" firstAttribute="top" secondItem="EcV-w2-oHq" secondAttribute="top" constant="20" id="7Pm-Ld-PxT"/>
                             <constraint firstItem="9Gh-Y2-eGb" firstAttribute="trailing" secondItem="EcV-w2-oHq" secondAttribute="trailing" id="GPg-HB-8Eo"/>
                             <constraint firstItem="EcV-w2-oHq" firstAttribute="trailing" secondItem="f8f-te-q5z" secondAttribute="trailing" id="HIL-V0-5je"/>
-                            <constraint firstItem="0xm-Qb-fu7" firstAttribute="top" secondItem="EcV-w2-oHq" secondAttribute="top" id="Knq-1s-wtr"/>
+                            <constraint firstItem="0xm-Qb-fu7" firstAttribute="top" secondItem="EcV-w2-oHq" secondAttribute="top" constant="-20" id="Knq-1s-wtr"/>
                             <constraint firstItem="EcV-w2-oHq" firstAttribute="bottom" secondItem="0xm-Qb-fu7" secondAttribute="bottom" id="L1o-6H-Kyh"/>
                             <constraint firstItem="EcV-w2-oHq" firstAttribute="bottom" secondItem="9Gh-Y2-eGb" secondAttribute="bottom" constant="20" id="ZOD-vG-yzw"/>
                             <constraint firstItem="f8f-te-q5z" firstAttribute="leading" secondItem="EcV-w2-oHq" secondAttribute="leading" id="czm-Gp-awb"/>
@@ -292,10 +311,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrG-kd-zIH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1434" y="135"/>
+            <point key="canvasLocation" x="1433.3333333333335" y="134.5108695652174"/>
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>

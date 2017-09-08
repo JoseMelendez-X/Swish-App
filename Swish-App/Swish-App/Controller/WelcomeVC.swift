@@ -1,27 +1,22 @@
 //
-//  ViewController.swift
+//  WelcomeVC.swift
 //  Swish-App
 //
-//  Created by Jose Melendez on 9/6/17.
+//  Created by Jose Melendez on 9/8/17.
 //  Copyright © 2017 JoseMelendez. All rights reserved.
 //
 
 import UIKit
 
 class WelcomeVC: UIViewController {
-    
-    @IBOutlet weak var swoosh: UIImageView!
-    
-    @IBOutlet weak var bgImage: UIImageView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
     }
     
-    @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue) {
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) {
         
     }
 
 }
-

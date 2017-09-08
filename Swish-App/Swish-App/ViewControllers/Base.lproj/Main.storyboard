@@ -91,10 +91,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="bgImage" destination="cv1-Yo-TEP" id="N0z-Da-LHl"/>
-                        <outlet property="swoosh" destination="lzx-Xk-Jgr" id="j4g-bo-OuP"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,7 +185,7 @@
                                 </constraints>
                                 <state key="normal" image="backButton"/>
                                 <connections>
-                                    <segue destination="NtQ-9V-EQq" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="5Zs-E6-BoK"/>
+                                    <segue destination="NtQ-9V-EQq" kind="unwind" unwindAction="unwindSegueWithSegue:" id="3yQ-qI-4Fa"/>
                                 </connections>
                             </button>
                         </subviews>

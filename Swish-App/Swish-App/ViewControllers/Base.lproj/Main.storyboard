@@ -173,9 +173,12 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Ea4-Yj-NUy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
-                                <state key="normal" title="Co-ed">
+                                <state key="normal" title="Next">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="NextButtonTapped:" destination="WqV-6d-G1A" eventType="touchUpInside" id="0OE-g5-5c0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJb-gy-UQw">
                                 <rect key="frame" x="0.0" y="30" width="83" height="36"/>
@@ -210,6 +213,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XpO-pY-WqY"/>
                     </view>
+                    <connections>
+                        <segue destination="5w5-SK-7aa" kind="show" identifier="skillVCSegue" id="NVF-0H-Bfo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UTz-13-ym5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="NtQ-9V-EQq" userLabel="Exit" sceneMemberID="exit"/>
@@ -307,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrG-kd-zIH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1433.3333333333335" y="134.5108695652174"/>
+            <point key="canvasLocation" x="1680" y="135"/>
         </scene>
     </scenes>
     <resources>

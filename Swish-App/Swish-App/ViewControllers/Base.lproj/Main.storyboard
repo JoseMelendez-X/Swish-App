@@ -19,10 +19,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swish_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="Swish_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="136.23188405797103" y="132.06521739130434"/>
         </scene>
-        <!--View Controller-->
+        <!--LeagueVC-->
         <scene sceneID="NX5-VV-IiX">
             <objects>
-                <viewController id="WqV-6d-G1A" sceneMemberID="viewController">
+                <viewController id="WqV-6d-G1A" customClass="LeagueVC" customModule="Swish_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1R9-Cd-cmc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,10 +220,10 @@
             </objects>
             <point key="canvasLocation" x="808.69565217391312" y="134.5108695652174"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillVC-->
         <scene sceneID="poz-0U-Aeu">
             <objects>
-                <viewController id="5w5-SK-7aa" sceneMemberID="viewController">
+                <viewController id="5w5-SK-7aa" customClass="SkillVC" customModule="Swish_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZuJ-dp-4Ko">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

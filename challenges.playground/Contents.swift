@@ -19,3 +19,16 @@ func pelindrom(string: String) -> Bool {
 }
 
 pelindrom(string: "Rotator")
+
+
+func containsSameCharacters(string1: String, string2: String) -> Bool {
+    
+    let array1 = Array(string1.characters)
+    
+    let array2 = Array(string2.characters)
+    
+    return array1.sorted() == array2.sorted()
+    
+}
+
+containsSameCharacters(string1: "jose", string2: "Red ")
